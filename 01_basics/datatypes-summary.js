@@ -38,3 +38,7 @@ let myObj = {
 const myFunction = function() {
     console.log("Hello World!")
 }
+
+console.log(typeof bigNumber);
+console.log(typeof outsideTemp);
+console.log(myFunction)
