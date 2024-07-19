@@ -42,3 +42,27 @@ const myFunction = function() {
 console.log(typeof bigNumber);
 console.log(typeof outsideTemp);
 console.log(myFunction)
+
+// ****************************************************
+
+// Stack memory (Primitive) - Heap(Non-Primitive)
+
+// Example:
+let myLastName = "Sachdeva"
+let anotherValue = myLastName
+anotherValue = "Jagriti"
+console.log(myLastName);
+console.log(anotherValue);
+
+let userOne = {
+    email: "abc@gmail.com",
+    upi: "user@ybl"
+}
+let userTwo = userOne;
+console.log(userTwo);
+
+userTwo.email = "xyz@gmail.com"
+console.log(userOne.email);
+console.log(userTwo.email);
+
+console.log(userOne);
