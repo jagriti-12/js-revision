@@ -50,3 +50,29 @@ console.log("Elements in A1 after combining:", A1);
 const A3 = {...A1,...A2}
 console.log(A3);
 
+// How data came from database => In the form of Array with Objects or Objects in an Array
+
+const user = [
+    {
+        name: "Jagriti", 
+        id: 1
+    },
+    {
+        name: "Sachdeva", 
+        id: 2
+    },
+    {
+        name: "Jags", 
+        id: 3
+    },
+]
+
+// Accessing First Value
+console.log(user[0].name); // Jagriti
+
+// To access all the keys from the object we can run the command:
+console.log(Object.keys(user)); // [0, 1, 2] and in the form of array.
+console.log(Object.values(user)); // [{key:Value},{key:value}...]
+console.log(Object.entries(user)); //Returns an array inside an array [['key','value],[key,value]]
+
+console.log(user.hasOwnProperty('isLoggedIn')); //False as this property is not in the user object!
