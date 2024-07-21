@@ -76,3 +76,38 @@ console.log(Object.values(user)); // [{key:Value},{key:value}...]
 console.log(Object.entries(user)); //Returns an array inside an array [['key','value],[key,value]]
 
 console.log(user.hasOwnProperty('isLoggedIn')); //False as this property is not in the user object!
+
+const course ={
+    courseName: "JS in Hindi",
+    price: "999",
+    courseInstructor: "Hitesh"
+}
+
+// Accessing method : Dot notation or Square bracket notation.
+console.log(course.courseName); //JS in Hindi
+console.log(course['courseInstructor']); //Hitesh
+
+// Another new method:
+const {courseInstructor} = course // const {value} = object 
+console.log(courseInstructor); //Hitesh
+
+// To destructure the value as courseInstructor is the big key or name so we are destructing it from courserInstructor to the Instructor only
+
+const {courseInstructor: Instructor} = course //const {oldName: newName} = object
+console.log(Instructor); //Hitesh
+
+// API
+// In Json Format 
+
+// {
+//     "name": "jagriti1",
+//     "age": "21"
+// }
+
+// In an array format
+// [
+//     {},
+//     {},
+// ]
+
+// Famous API: Random user me
