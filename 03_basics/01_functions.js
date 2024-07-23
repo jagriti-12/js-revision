@@ -61,3 +61,51 @@ function checkAndPrint(user) {
 }
 console.log(checkAndPrint("Jagriti")); //Will print Jagriti just logged in!!
 console.log(checkAndPrint()); // Please enter a correct value undefined
+
+// Day 2 Functions:
+function calculateValue(...price) { // ... acting as rest operator in this
+    return price
+}
+console.log(calculateValue(200)); //200
+console.log(calculateValue(200, 300, 400, 500)); // return array but it will only proceed if we have added "..." in the parameter
+
+function newValue(val1, val2, ...newPrice) {
+    return newPrice
+}
+console.log(newValue(200,300,400,500,600,700)) // [400, 500, 600, 700] According to the rest operator as value 200 and 300 are given to val1 and val2 variables.
+
+// Handle objects in Functions:
+const user = {
+    username:"Jagriti" ,
+    age: 21
+}
+
+function handleObject(handling) {
+    console.log(`UserName is: ${handling.username} and userAge is ${handling.age}`)
+}
+
+handleObject(user)
+
+// Another calling method:
+handleObject(
+    {
+        username: "Sachdeva",
+        age: 21
+    }
+)
+
+// Array in Functions:
+const arr1 = [12, 9, 2, 11, 16, 10, 17, 10]
+
+// Function which will return array's second value
+function arrayHandle(valueReturning) {
+    console.log(arr1[1])
+}
+
+arrayHandle()
+
+// another method
+function valueHandle(array1) {
+    return array1[1]
+}
+console.log(valueHandle([9, 12, 2, 11, 20, 16, 17, 10]))
